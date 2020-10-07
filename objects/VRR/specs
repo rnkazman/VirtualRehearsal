@@ -1,0 +1,42 @@
+The VRR (Virtual Rehearsal Room) is build on a Raspberry Pi 4.
+  * xxx RAM
+  * xxx Memory
+  
+Software:
+  Ubuntu 64-bit  ver. ???
+  Jamulus ver. ???
+  Jitsi Meet ver. ???
+  
+  
+Installation:
+  Installation will be done by the our project support team. Team members is TBD.
+  
+Installation process:
+  TBD
+
+
+Logging:
+  Since the VRR is expected to run unattended, there should be a logging function.
+     * collect run-time errors
+     * collect periodic performance snapshots (every 5 minutes?)
+          * number of users
+          * Jamulus CPU load
+          * Jitsi CPU load
+          * latency stats
+     * log shutdown and startup events
+         
+  The log should be in CSV format for easy analysis.
+  The log will be emailed to <tbd mailbox> every 6 hours.
+  
+  Is the system fast enough to email the log on shutdown or panic?
+  
+  Notes:
+  We want to collect data to profile system load vs number of users.
+  There is significant speculation on system loading. Let's collect the data.
+  Similarly, we want to collect network latency data. 
+ 
+         
+  
+  
+  
+  
