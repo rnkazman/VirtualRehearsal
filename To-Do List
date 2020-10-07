@@ -1,0 +1,36 @@
+
+Jitsi Meet simple test with 3 or more users.
+Document NAT/firewall recommendationas. 
+
+Jitsi Meet with cert. Just a self-signed cert for now
+
+Jamulus test (using the multithreaded release).
+
+Invite some singers for a Jamulus+Jitsi test.
+** Gene to monitor transport delay. We need to know when the transport delay is >=30ms.
+** Verify Jamulus+Jitsi coexist on a single RPi.
+
+Burnin testing - how long can VRR run without restart?
+Should we build VRR with automatic reboot for reliability?
+
+
+Punahou POC test
+
+
+Nui Valley POC test
+
+
+Recruit adult musicians to exercise the VCC.
+
+VR stress test
+
+
+How hard would it be to build a client-side load generator?
+Can we build a tool that lets us exercise a 100 musician load?
+
+
+
+
+
+
+
