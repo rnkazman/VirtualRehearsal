@@ -1,0 +1,10 @@
+Windows users need a lot of support through the onboarding process. 
+Primarily, most users do not understand what is required to configure the audio driver, specifically the ASIO4All driver. They are confused by the two step process, i.e. configure the driver through the OS and thebuntn configure the driver from inside Jamulus.
+
+We may want to have users boot from a USB stick.
+   1- will they be confused by the boot process
+   2- can we package an Ubuntu/Jamulus/browser0-for-Jitsi so that it appears to be an easy plug-and-play application?
+   
+   
+   
+   
