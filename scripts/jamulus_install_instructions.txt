@@ -1,0 +1,24 @@
+===========
+Installing Jamulus
+===========
+Run the following commands to install Jamulus:
+
+sudo /root/jamulus/1-build_jamulus.bash
+sudo /root/jamulus/2-firewall_config.bash
+sudo /root/jamulus/3-install_jamulus.bash
+
+===========
+Troubleshooting
+===========
+Check the following logs if there are problems:
+journalctl -u jamulus
+
+Control the time frame of the logs:
+journalctl -u jamulus --since today
+journalctl -u jamulus --since "1 hour ago"
+
+Check for connection messages:
+journalctl -u jamulus | grep connected
+
+Follow the log as it updates:
+journalctl -f -u jamulus

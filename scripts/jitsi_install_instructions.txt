@@ -1,0 +1,27 @@
+===========
+Installing Jitsi
+===========
+Run the following commands to install Jitsi:
+
+sudo /root/jitsi/1-setup_hosts.bash
+sudo /root/jitsi/2-firewall_config.bash
+sudo /root/jitsi/3-jitsi_install.bash
+
+You will need a fully qualified domain name, and a static IP address.
+
+Optionally, you can provide Jitsi with a TLS certificate. Otherwise you can follow the instructions below to generate a Let's Encrypt certificate after the install.
+
+===========
+Let's Encrypt Certificate
+===========
+Run the below command only after you have installed Jitsi with a self-signed certificate:
+
+sudo /usr/share/jitsi-meet/scripts/install-letsencrypt-cert.sh
+
+===========
+Troubleshooting
+===========
+Check the following logs if there are problems:
+/var/log/jitsi/jvb.log
+/var/log/jitsi/jicofo.log
+/var/log/prosody/prosody.log
