@@ -43,6 +43,12 @@ Configure DNS
 Build the server image
     * Host name - FQDN
     * Jamulus server name
+    * configure Dynu client
+    
+    Some standard things we need to define
+    * SSH support credentials
+    * email target for log reports
+    * email target for support alarms
         
     
                         
