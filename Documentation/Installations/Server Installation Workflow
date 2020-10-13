@@ -1,0 +1,35 @@
+Planning
+    * IP address        Will the server be behind a NAT or a router?
+                        If behind a NAT, then this is a small network and the server will be in the DMZ.
+                        IF behind a router, then the site needs to assign an IP address.
+                        
+    * Host name         If host is behind a NAT, then select a host name in the form of <host>.eyc-labs.com
+                            where perferably <host> = HI-Studio<num>. We will assign value of <num>.
+                        If the host is behind a router, the selewct a host name in the form of <host>.<domain name>.
+                            Ex: <domain name> = punahou.edu.
+                            where preferably (for the evaluation period) <host> = HI-Studio<num>.
+                        Ideally we want the central Jamulus server to show our test servers as HI-Studio<num>.
+                        
+     * Remote-support-aggrement
+                        Confirm agreement for remote-support. 
+                        During the evaluation phase, we need remote ssh access. 
+                             The firewall will need to have port forwarding rules to allow us remote access.
+                        When the system goes into production, the site has the option of having 
+                            local IT trained for support or to continue remote support.
+                        
+
+Site Visit
+    * physical-location
+                        The server needs 
+                            * unswitched power (always on)
+                            * ethernet jack
+                            * location with low human traffic to minimize accidental disconnect, damage, or vandilizm.
+                            
+    * verify the location will have 24/7 power and temperature control
+                            
+    * Designated-contact
+                        person responsible for taking trouble calls to power cycle the server
+                        
+                        
+                        
+                        
