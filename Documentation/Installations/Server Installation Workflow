@@ -10,6 +10,9 @@ Planning
                             where preferably (for the evaluation period) <host> = HI-Studio<num>.
                         Ideally we want the central Jamulus server to show our test servers as HI-Studio<num>.
                         
+     * Jamulus server name
+                    * It is preferred to be the same as the same name as the FQDN
+                        
      * Remote-support-aggrement
                         Confirm agreement for remote-support. 
                         During the evaluation phase, we need remote ssh access. 
@@ -31,5 +34,15 @@ Site Visit
                         person responsible for taking trouble calls to power cycle the server
                         
                         
-                        
+Configure DNS
+    * add new server to DNS
+        * if the host name is HI-Studio.eyc-labs.com, add host to Dynu
+        * if the host name is id the school's domain, school's IT staff needs to add the host record to DNS
+    * N.B. adding the host to the school's domain needs 48 hours for the change to propagage
+
+Build the server image
+    * Host name - FQDN
+    * Jamulus server name
+        
+    
                         
