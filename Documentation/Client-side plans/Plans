@@ -1,0 +1,26 @@
+Step 1 -  MacOS and Win10 (plus a few older Windows versions)
+           This is the basic set.
+           We recognize that Win10 and all the Windows family are hard to support.
+           Most Windows don't understand the concepts of drivers and driver configurations. 
+               Just giving users cookbook instructions doesn't completely solve the problem because there are variations 
+               depending on their hardware configruation. Further they don't know if they have made a mistake.
+           
+           For scaling up, we probably need a remote support tool so that we can configure their device for them. 
+
+Step 2 - Jamnulus OS
+          We need to explore this as a solution for Windows users.
+          
+          This is also a solution for inexpensive devices.
+          Chromebook hardware or other lowcost Wintel devices would be ideal platform for Jamulus OS.
+          We need to test how sensitive Jamulus OS is to different audio chipsets.
+          
+          N.B. Raspberry Pi is not an option as it will require monitor and keyboard/mouse. Some UI will be needed.
+          When monitor and input devices are considered, a tablet-style wintel device will be cheaper.
+          
+Step 3 - Chromebooks
+          There is no path to making Jamulus work for ChromeOS. 
+          Linux support is only for developer tools to help developers create new ChromeOS solutions.
+          ChromeOS solutions require applications to be Chrome extensions.
+          
+          The only possible path forward is in partnership with Google. 
+          This would take strong traction with the schools before Google is impressed and interested.
