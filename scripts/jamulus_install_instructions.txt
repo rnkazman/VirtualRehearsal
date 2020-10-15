@@ -22,3 +22,6 @@ journalctl -u jamulus | grep connected
 
 Follow the log as it updates:
 journalctl -f -u jamulus
+
+Restart jamulus services:
+sudo systemctl restart jamulus
