@@ -1,0 +1,14 @@
+1) Notes assume that you have logged in to the studio server with SSH (no GUI) to studioadm
+2) Use sudo su - to switch to root
+3) The server start command is located in this file on the line that begins with ExecStart:
+  3a) /etc/systemd/system/jamulus.service
+  3b) edit the file with vi /etc/systemd/system/jamulus.service
+4) The start command uses the Jamulus command line interface to configure the server. The various options can be found here:
+  4a) https://github.com/corrados/jamulus/wiki/Command-Line-Options
+5) By default, I configured the welcome message to point to a file located here:
+  5a) /etc/jamulus/jamulus_welcome
+  5b) To edit the welcome message, simply edit that file with vi /etc/jamulus/jamulus_welcome
+6) After you have completed editing the server, issue the following commands in order to make the changes take effect:
+  6a) systemctl daemon-reload
+  6b) systemctl stop jamulus
+  6c) systemctl start jamulus
