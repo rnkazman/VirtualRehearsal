@@ -1,0 +1,19 @@
+===========
+Installing Email
+===========
+WARNING:
+  Jitsi Host setup must be run prior to email setup:
+    sudo /root/jitsi/1-setup_hosts.bash
+------------------------------------------------------------
+
+Run the following commands to install and configure email:
+
+Note: when prompted choose
+  * Internet Site
+  * eyc-labs.com or the client's domain name (as was set in the host configuration)
+
+sudo /root/email/1-install_postfix.bash
+
+Afterwards, if you would like to enable performance monitoring emails to be sent out, execute the following command and uncomment the line for /root/scripts/perf_mon.bash
+
+sudo crontab -e
