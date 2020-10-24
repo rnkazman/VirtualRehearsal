@@ -8,6 +8,23 @@ sudo /root/jamulus/2-firewall_config.bash
 sudo /root/jamulus/3-install_jamulus.bash
 
 ===========
+Jamulus Reconfiguration
+===========
+To edit the Jamulus configuration, you must edit the following file:
+
+/etc/systemd/system/jamulus.service
+
+Jamulus server is started with command line options specified here:
+
+https://github.com/corrados/jamulus/wiki/Command-Line-Options
+
+Once your edits are complete, run the following commands to restart Jamulus and have the new configuration take effect:
+
+systemctl daemon-reload
+systemctl restart jamulus
+systemctl status jamulus
+
+===========
 Troubleshooting
 ===========
 Check the following logs if there are problems:
