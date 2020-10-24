@@ -4,8 +4,8 @@
 
 typeset cache_dir="/tmp/nmon"
 typeset max_files=4
-typeset sendto="casey.chock@gmail.com"
-typeset fromaddr="logs@$(hostname)"
+typeset sendto="gene96817@gmail.com"
+typeset fromaddr="Logs <logs@$(hostname)>"
 typeset cap_delay="300" # capture every 5 minutes
 typeset cap_cnt="72" # capture 72 times (6 hours)
 
@@ -21,7 +21,7 @@ do
 done
 
 # email most recent log file
-echo "Logs up to $(date)" | mail -a "From: ${fromaddr}" -s "$(hostname) Performance Logs" -A "$(ls -t | head -1)" "${sendto}"
+echo "Logs up to $(date)" | mail -a "From: ${fromaddr}" -s "$(hostname) Performance Logs" -A "$(ls -t ${cache_dir} | head -1)" "${sendto}"
 
 # setup the next log capture
 nmon -f -s "${cap_delay}" -c "${cap_cnt}"
