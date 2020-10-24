@@ -66,7 +66,7 @@ IOSchedulingPriority=0
 
 #### Change this to set genre, location and other parameters.
 #### See https://github.com/corrados/jamulus/wiki/Command-Line-Options ####
-ExecStart=/usr/local/bin/Jamulus -s -n -e ${central_server} -o "${server_name};Honolulu;225" -w ${welcome_path}
+ExecStart=/usr/local/bin/Jamulus -s -n -e ${central_server} -o "${server_name};Honolulu;225" -w ${welcome_path} -u 50 -F -T
 
 Restart=on-failure
 RestartSec=30
