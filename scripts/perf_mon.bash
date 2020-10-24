@@ -4,7 +4,8 @@
 
 typeset cache_dir="/tmp/nmon"
 typeset max_files=4
-typeset sendto="gene96817@gmail.com"
+typeset host="$(hostname)"
+typeset sendto="log-${host%%.*}@eyc-labs.com"
 typeset fromaddr="Logs <logs@$(hostname)>"
 typeset cap_delay="300" # capture every 5 minutes
 typeset cap_cnt="72" # capture 72 times (6 hours)
