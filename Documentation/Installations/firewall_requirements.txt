@@ -1,0 +1,34 @@
+When fully configured for Jamulus and Jitsi, the following firewall rules are used on the Pi itself:
+  root@studio1:~# ufw status
+  Status: active
+
+  To                         Action      From
+  --                         ------      ----
+  22                         ALLOW       Anywhere
+  80/tcp                     ALLOW       Anywhere
+  443/tcp                    ALLOW       Anywhere
+  4443/tcp                   ALLOW       Anywhere
+  10000/udp                  ALLOW       Anywhere
+  22/tcp                     ALLOW       Anywhere
+  22124/udp                  ALLOW       Anywhere
+  22 (v6)                    ALLOW       Anywhere (v6)
+  80/tcp (v6)                ALLOW       Anywhere (v6)
+  443/tcp (v6)               ALLOW       Anywhere (v6)
+  4443/tcp (v6)              ALLOW       Anywhere (v6)
+  10000/udp (v6)             ALLOW       Anywhere (v6)
+  22/tcp (v6)                ALLOW       Anywhere (v6)
+  22124/udp (v6)             ALLOW       Anywhere (v6)
+
+If a firewall is placed between the Pi and the internet, the following ports will need to be opened:
+
+       Source       |      Port     |    Destination    |    Description    
+--------------------|---------------|-------------------|-------------------
+      Internet      |     22/tcp    |  VirtualStudio Pi | Remote management
+      Internet      |     80/tcp    |  VirtualStudio Pi | Jitsi web server
+      Internet      |    443/tcp    |  VirtualStudio Pi | Jitsi web server
+      Internet      |  10000/udp    |  VirtualStudio Pi | Jitsi service
+      Internet      |  22124/udp    |  VirtualStudio Pi | Jamulus server
+  VirtualStudio Pi  |  587/tcp,udp  |     Internet      | Email for performance statistics
+  VirtualStudio Pi  |     53/udp    |     Internet      | DNS lookup
+  VirtualStudio Pi  |     80/tcp    |     Internet      | Ubuntu updates and software install
+  VirtualStudio Pi  |    443/tcp    |     Internet      | Ubuntu updates and software install
