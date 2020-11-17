@@ -17,3 +17,7 @@ sudo /root/email/1-install_postfix.bash
 Afterwards, if you would like to enable performance monitoring emails to be sent out, execute the following command and uncomment the line for /root/scripts/perf_mon.bash
 
 sudo crontab -e
+
+The line should read as follows after editing:
+
+0 */6 * * * /root/scripts/perf_mon.bash
