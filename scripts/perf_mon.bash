@@ -16,7 +16,7 @@ which mail >/dev/null 2>&1 || exit 1
 cd -- "${cache_dir}" || exit 1
 
 # cleanup old nmon files
-while $(( $(ls "${cache_dir}" | wc -l) > max_files ))
+while (( $(ls "${cache_dir}" | wc -l) > max_files ))
 do
   rm -f "$(ls -t | tail -1)"
 done
