@@ -1,0 +1,11 @@
+===========
+Installing DynuDNS
+===========
+
+Run the following commands to activate the DynuDNS script:
+
+sudo crontab -e
+
+In the crontab file, uncomment the line for dynu.sh so it reads:
+
+*/5 * * * * /root/scripts/dynu.sh
