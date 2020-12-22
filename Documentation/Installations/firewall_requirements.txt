@@ -28,7 +28,9 @@ If a firewall is placed between the Pi and the internet, the following ports wil
       Internet      |    443/tcp    |  VirtualStudio Pi | Jitsi web server
       Internet      |  10000/udp    |  VirtualStudio Pi | Jitsi service
       Internet      |  22124/udp    |  VirtualStudio Pi | Jamulus server
-  VirtualStudio Pi  |  587/tcp,udp  |     Internet      | Email for performance statistics
+  VirtualStudio Pi  |  22524/tcp,udp|     Internet      | Jamulus central server
+  VirtualStudio Pi  |    123/udp    |     Internet      | NTP time sync
+  VirtualStudio Pi  |    587/tcp,udp|     Internet      | Email for performance statistics
   VirtualStudio Pi  |     53/udp    |     Internet      | DNS lookup
   VirtualStudio Pi  |     80/tcp    |     Internet      | Ubuntu updates and software install
   VirtualStudio Pi  |    443/tcp    |     Internet      | Ubuntu updates and software install
