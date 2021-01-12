@@ -22,7 +22,7 @@ do
 done
 
 # email most recent log file
-echo "Logs up to $(date)" | mail -a "From: ${fromaddr}" -s "$(hostname) Performance Logs" -A "$(ls -t ${cache_dir} | head -1)" "${sendto}"
+echo "Logs up to $(date)" | mail -a "From: ${fromaddr}" -s "$(hostname) Performance Logs" -A "${cache_dir}/$(ls -t ${cache_dir} | head -1)" "${sendto}"
 
 # setup the next log capture
 nmon -f -s "${cap_delay}" -c "${cap_cnt}"
