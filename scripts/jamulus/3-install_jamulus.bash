@@ -8,7 +8,7 @@
 #         jazz           |  jamulusjazz.fischvolk.de:22324       
 #  Classical/Folk/Choir  |  jamulusclassical.fischvolk.de:22524  
 
-typeset R=$(curl -s https://api.github.com/repos/corrados/jamulus/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
+typeset R=$(curl -s https://api.github.com/repos/jamulussoftware/jamulus/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
 typeset jamulus="/usr/local/bin/Jamulus"
 typeset central_server="jamulusclassical.fischvolk.de:22524"
 typeset service_script="/etc/systemd/system/jamulus.service"
@@ -65,7 +65,7 @@ IOSchedulingClass=realtime
 IOSchedulingPriority=0
 
 #### Change this to set genre, location and other parameters.
-#### See https://github.com/corrados/jamulus/wiki/Command-Line-Options ####
+#### See https://github.com/jamulussoftware/jamulus/wiki/Command-Line-Options ####
 ExecStart=/usr/local/bin/Jamulus -s -n -e ${central_server} -o "${server_name};Honolulu;225" -w ${welcome_path} -u 50 -F -T
 
 Restart=on-failure
